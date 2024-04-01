@@ -3,6 +3,12 @@
     height: 0px;
 }
 
+h1{
+    font-family: Arial;
+    color: aqua;
+    font-size: 40px;
+}
+
 .paragraph-home-1{
     font-size: 20px;
     display: flex;
