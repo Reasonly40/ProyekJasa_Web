@@ -32,8 +32,16 @@ h1{
     background-color: aqua;
 }
 
-a:hover{
+a:link, a:visited{
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     height: 30px;
     width: 100px;
+    background-color: white;
+}
+
+a:hover{
     background-color: aqua;
 }
