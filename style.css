@@ -45,3 +45,8 @@ a:link, a:visited{
 a:hover{
     background-color: aqua;
 }
+
+.logo-contact{
+    height: 20px;
+    width: 20px;
+}
