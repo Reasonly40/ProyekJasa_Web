@@ -27,3 +27,13 @@ h1{
     width: 200px;
     height: 200px;
 }
+
+.button-home{
+    background-color: aqua;
+}
+
+a:hover{
+    height: 30px;
+    width: 100px;
+    background-color: aqua;
+}
