@@ -22,7 +22,7 @@ h1{
 
 .img-home {
     display: flex;
-    justify-content: flex-end;
+    float: right; 
     align-items: right;
     width: 200px;
     height: 200px;
