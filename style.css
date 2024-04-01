@@ -12,7 +12,7 @@
 
 .img-home {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: right;
     width: 50vh;
     height: 50vh;
