@@ -20,6 +20,6 @@ h1{
     display: flex;
     justify-content: flex-end;
     align-items: right;
-    width: 50vh;
-    height: 50vh;
+    width: 200px;
+    height: 200px;
 }
