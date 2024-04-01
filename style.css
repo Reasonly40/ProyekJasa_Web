@@ -1,0 +1,19 @@
+.html {
+    width: 0px;
+    height: 0px;
+}
+
+.paragraph-home-1{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.img-home {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    width: 50vh;
+    height: 50vh;
+}
