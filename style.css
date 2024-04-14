@@ -1,47 +1,64 @@
-body{
-    background-color: lightyellow;
-}
-.html {
-    width: 0px;
-    height: 0px;
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
-h1{
-    font-family: Arial;
-    color: aqua;
-    font-size: 40px;
+.title {
+    padding: 1px;
+    background-color: #f6e8b9;
+    color: black;
 }
 
-.paragraph-home-1{
-    font-size: 20px;
+.title h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    padding: 1px;
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: chartreuse;
 }
 
-.img-home {
-    display: flex;
-    float: right; 
-    align-items: right;
-    width: 200px;
-    height: 200px;
-}
-
-.button-home{
-    background-color: aqua;
-}
-
-a:link, a:visited{
-    font-size: 15px;
+.paragraph-home-1 {
+    font-size: 1.2rem;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    height: 20px;
-    width: 80px;
-    background-color: white;
+    padding: 1px;
 }
 
-a:hover{
-    background-color: aqua;
+.button-home {
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    background-color: #f6e8b9;
+}
+
+.button-home button {
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    text-decoration: none;
+    background-color: #333;
+    color: rgba(51, 51, 51, 0.61);
+    border-radius: 5px;
+}
+
+.button-home button:hover {
+    background-color: #bb2b2b;
+}
+
+.img-rotimodel {
+    text-align: center;
+    padding: 2px;
+}
+
+.img-rotimodel img {
+  padding: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.img-rotimodel p {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px;
+    margin: 0;
 }
