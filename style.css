@@ -1,38 +1,30 @@
+/* style.css */
+
 body {
     margin: 0;
     padding: 0;
     color: #333;
 }
 
-.title {
-    padding: 1px;
+header {
     background-color: #f6e8b9;
-    color: black;
-}
-
-.title h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    padding: 1px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.paragraph-home-1 {
-    font-size: 1.2rem;
-    text-align: center;
-    padding: 1px;
-}
-
-.button-home {
-    text-align: center;
     padding: 1rem;
-    position: relative;
-    background-color: #f6e8b9;
+    text-align: center;
 }
 
-.button-home button {
+header.title {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 1px;
+}
+
+nav.button-home {
+    background-color: #f6e8b9;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav.button-home button {
     font-size: 1.2rem;
     padding: 5px 15px;
     text-decoration: none;
@@ -41,24 +33,60 @@ body {
     border-radius: 5px;
 }
 
-.button-home button:hover {
+nav.button-home button:hover {
     background-color: #bb2b2b;
 }
 
-.img-rotimodel {
+main {
+    padding: 2rem;
+}
+
+main.paragraph-home-1 {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1px;
+}
+
+main.img-rotimodel {
     text-align: center;
     padding: 2px;
 }
 
-.img-rotimodel img {
-  padding: 2rem;
-  justify-content: center;
-  text-align: center;
+main.img-rotimodel img {
+    padding: 2rem;
+    justify-content: center;
+    text-align: center;
 }
 
-.img-rotimodel p {
+main.img-rotimodel p {
     text-align: center;
     font-size: 1.2rem;
     padding: 20px;
+    margin: 0;
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-list li {
+    margin-bottom: 20px;
+}
+
+.product-list li img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.product-list li p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.img-whatsapp {
+    padding: 0;
     margin: 0;
 }
