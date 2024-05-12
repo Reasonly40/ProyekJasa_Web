@@ -23,24 +23,31 @@
         <div class="form">
             <h2>Silahkan memesan produk kami melalui form dibawah :</h2>
             <form action="#" method="POST">
-                <label for="name">Nama:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-    
-                <label for="number">Nomor Telepon:</label><br>
-                <input type="number" id="number" name="number" required><br><br>
-    
-                <label for="menu">Pesan:</label><br>
-                <input type="menu" id="menu" name="menu" required><br><br>
-    
-                <label for="quantity">Jumlah Pesanan:</label><br>
-                <input type="number" id="quantity" name="quantity" required><br><br>
-    
-                <label for="note">Catatan :</label><br>
-                <textarea id="note" name="note" rows="4"></textarea><br><br>
-    
+                <div class="name">
+                    <label for="name">Nama:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                </div>
+                <div class="number">
+                    <label for="number">Nomor Telepon:</label><br>
+                    <input type="tel" id="number" name="number" pattern="[0-9]{4}-[0-9]{9}" required><br><br>
+                </div>
+                <div class="menu">
+                    <label for="menu">Pesan:</label><br>
+                    <input type="menu" id="menu" name="menu" required><br><br>
+                </div>
+                <div class="quantity">
+                    <label for="quantity">Jumlah Pesanan:</label><br>
+                    <input type="number" id="quantity" name="quantity" required><br><br>
+                </div>
+                <div class="note">
+                    <label for="note">Catatan :</label><br>
+                    <textarea id="note" name="note" rows="4"></textarea><br><br>
+                </div>
                 <label for=""></label>
-    
-                <button type="submit">Submit</button>
+
+                <div id="submit">
+                    <button type="submit">Submit</button>
+                </div>
                 </form>
         </div>
     </main>

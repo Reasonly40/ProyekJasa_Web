@@ -95,3 +95,24 @@ main.img-rotimodel p {
     padding: 0;
     margin: 0;
 }
+
+.form-group {
+    margin: 0;
+    padding: 0;
+
+}
+
+.number {
+    right: 0;
+    margin-right: 0;
+    margin-top: -55px;
+    float: right;
+}
+
+.quantity {
+    right: 0;
+    margin-right: 0;
+    margin-top: -55px;
+    float: right;
+}
+
