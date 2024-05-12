@@ -41,10 +41,9 @@ main {
     padding: 2rem;
 }
 
-main.paragraph-home-1 {
-    font-size: 1.2rem;
+.paragraph-home-1 {
     text-align: center;
-    padding: 1px;
+    padding: 0;
 }
 
 main.img-rotimodel {
@@ -96,23 +95,47 @@ main.img-rotimodel p {
     margin: 0;
 }
 
-.form-group {
-    margin: 0;
-    padding: 0;
-
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.number {
-    right: 0;
-    margin-right: 0;
-    margin-top: -55px;
-    float: right;
+.form h2 {
+    margin-top: 0;
 }
 
-.quantity {
-    right: 0;
-    margin-right: 0;
-    margin-top: -55px;
-    float: right;
+.form section {
+    margin-bottom: 20px;
 }
 
+.form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form textarea {
+    resize: none;
+}
+
+.form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #444;
+}
