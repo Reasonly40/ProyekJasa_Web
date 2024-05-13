@@ -133,3 +133,10 @@ main.img-rotimodel img {
 .form button:hover {
     background-color: #444;
 }
+
+footer {
+    background-color: rgb(71, 67, 67); /* Warna latar belakang header */
+    padding: 5px 5px;
+    font-family: Arial;
+    color: white;
+}
