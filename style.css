@@ -1,42 +1,62 @@
 /* style.css */
 
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
 body {
+    background-color: #f8ecd5;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #f6e8b9;
+    background-color: #ff5a3d;
     padding: 1rem;
     text-align: center;
 }
 
-header.title {
+header .title h1 {
     font-size: 2rem;
     margin: 0;
 }
 
 nav.button-home {
-    background-color: #f6e8b9;
+    background-color: #ff5a3d;
     text-align: center;
+    margin-top: 10px;
 }
 
 nav.button-home button {
     font-size: 1.2rem;
-    padding: 5px 15px;
+    padding: 10px 20px;
     text-decoration: none;
     background-color: orange;
     color: rgba(51, 51, 51, 0.61);
+    border: none;
     border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    margin: 5px;
 }
 
 nav.button-home button:hover {
     background-color: #bb2b2b;
+    color: #fff;
 }
 
 main {
+    background-color: #f8ecd5;
     padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .paragraph-home-1 {
@@ -47,41 +67,69 @@ main {
     text-align: center;
     padding: 0;
 }
+
 .img-rotimodel {
     text-align: center;
-    padding: 1px;
+    padding: 1rem;
+    animation: slideInLeft 1s ease-in;
 }
 
-main.img-rotimodel img {
-    padding: 2rem;
-    justify-content: center;
-    text-align: center;
+.img-rotimodel img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 .product-list {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .product-list li {
-    margin-bottom: 20px;
+    margin: 10px;
+    flex: 1 0 45%;
+    max-width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .product-list li img {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 .product-list li p {
     font-size: 1.2rem;
-    margin: 0;
+    margin: 5px 0;
+    text-align: center;
 }
 
-.contact-icon > img{
+.contact-icon {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-icon img {
     height: 40px;
     width: 40px;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.contact-icon a {
+    display: block;
+    margin: 5px 0;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
 .img-whatsapp {
@@ -94,10 +142,14 @@ main.img-rotimodel img {
     padding: 20px;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
 }
 
 .form h2 {
     margin-top: 0;
+    text-align: center;
 }
 
 .form section {
@@ -107,14 +159,17 @@ main.img-rotimodel img {
 .form label {
     display: block;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .form input,
-.form textarea {
+.form textarea,
+.form select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    font-size: 1rem;
 }
 
 .form textarea {
@@ -126,17 +181,54 @@ main.img-rotimodel img {
     color: #fff;
     border: none;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .form button:hover {
     background-color: #444;
 }
 
+.testimonial-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    font-size: 1rem;
+    max-width: 800px;
+    margin: auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials {
+    text-align: center;
+}
+
+.testimonials h3 {
+    margin-bottom: 20px;
+}
+
+
+.center-iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+}
+
 footer {
     background-color: rgb(71, 67, 67); /* Warna latar belakang header */
     padding: 5px 5px;
+    text-align: center;
     font-family: Arial;
     color: white;
 }
