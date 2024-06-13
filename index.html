@@ -5,34 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Official Website Roti Bakar Mas Bambang</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const paragraphs = document.querySelectorAll('.testimonial-container > p');
-            const testimonials = Array.from(paragraphs).map(p => p.textContent);
-            
-            paragraphs.forEach(p => p.textContent = '');
-            
-            let currentIndex = 0;
-            let charIndex = 0;
-            
-            function typeWriter() {
-                if (charIndex < testimonials[currentIndex].length) {
-                    paragraphs[currentIndex].textContent += testimonials[currentIndex].charAt(charIndex);
-                    charIndex++;
-                    setTimeout(typeWriter, 50);
-                } else {
-                    charIndex = 0;
-                    currentIndex++;
-                    if (currentIndex < testimonials.length) {
-                        setTimeout(typeWriter, 1000); // Jeda antara paragraf
-                    }
-                }
-            }
-            
-            typeWriter();
-        });
-        </script>
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 
 <body>
@@ -70,7 +44,6 @@
                 <p>"Rotinya fresh saat dipanggang, penambahan topping pada rotinya merata gak ada yang kurang, The best pokoknya" - Anonymous 1</p>
                 <p>"Pertama kali nyoba roti bakar disini rotinya renyah apalagi si penjualnya ramah, cepat berkembang bisnisnya ya pak" - Anonymous 2</p>
                 <p>"Waktu sepulang kerja pengennya ngemil manis-manis tiap hari lewat roti bakar mas bambang, rotinya enak dan pas banget hehehe" - Anonymous 3</p>
-                
             </div>
         </div>
         <br><br>
@@ -85,7 +58,8 @@
     <footer>
         <p>
             <strong>&copy; Mei 2024 </strong>
-            jasapembuatanwebkreatif.com. All Rights Reserved.</p>
+                jasapembuatanwebkreatif.com. All Rights Reserved.</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
